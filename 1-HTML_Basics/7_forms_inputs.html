@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms and Inputs</title>
+</head>
+
+<body>
+
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+    <br /> <br />
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" cols="50" rows="5"></textarea>
+    </div>
+
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male" selected>Male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="age">Age</label><br />
+      <input type="number" name="age" id="age">
+    </div>
+
+    <div>
+      <label for="birthdate">Birthdate</label> <br />
+      <input type="date" name="date" id="date">
+    </div>
+
+    <div>
+      <label for="membership">membership</label>
+      <input type="radio" name="membership" value="simple" id="membership"> Simple
+      <input type="radio" name="membership" checked  value="standard" id="membership"> Standard
+      <input type="radio" name="membership" value="super" id="membership"> Super
+    </div>
+
+    <div>
+      <label for="membership">I Like...</label>
+      <input type="checkbox" name="likes" value="Code" id="likes"> Code
+      <input type="checkbox" name="likes" checked  value="art" id="likes"> Art
+      <input type="checkbox" name="likes" value="travel" id="likes"> Travel
+    </div>
+
+    <input type="submit" value="Submit">
+    <button type="submit">Send the info</button>
+    <button type="reset">Limpar</button>
+  </form>
+</body>
+
+</html>
