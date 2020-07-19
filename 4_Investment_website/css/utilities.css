@@ -141,3 +141,10 @@
   max-width: 25%;
   padding: 0 4px;
 }
+
+/* FLex Items IMG */
+
+.team img {
+  border-radius: 50%;
+  object-fit: scale-down;
+}
