@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Variables</title>
+  <style>
+    :root {
+      --max-width: 1100px;
+      --primary-color: steelblue;
+      --secondary-color: skyblue;
+      --light-color: #f4f4f4;
+      --box-1-width: 1;
+      --box-2-width: 2;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      background: var(--light-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) solid ;
+      color: white;
+      text-align: center ;
+    }
+
+    .container {
+      display: flex;
+      margin: auto;
+      max-width: var(--max-width );
+    }
+
+    .box {
+      background-color: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) solid;
+      color: white;
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    .box1 {
+      flex: var(--box-1-width)
+    }
+    .box2 {
+      flex: var(--box-2-width)
+    }
+
+    .box1 h3,
+    .box2 h3 {
+      border-bottom: 2px solid var(--secondary-color);
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS - Variables</h1>
+  </header>
+
+  <div class="container">
+    <div class="box box1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima adipisci cumque, deserunt mollitia neque
+        exercitationem cupiditate tempore beatae repudiandae, veniam culpa rerum quisquam reiciendis qui. Labore ducimus
+        blanditiis saepe!</p>
+    </div>
+    <div class="box box2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero nesciunt necessitatibus molestiae nulla
+        doloremque. Assumenda aliquid libero velit facere, ipsa sequi ducimus dolorem. Excepturi aliquid corrupti
+        consequatur fuga nulla.</p>
+    </div>
+  </div>
+</body>
+
+</html>
